@@ -1,5 +1,64 @@
-#FF9F09
-#A5A5A5
-#333333
-#000000
-#F8F8F8
+:root {
+  --mainOrange: #FF9F09; 
+  --mainLightGrey: #A5A5A5;
+  --mainDarkGrey: #333333;
+  --mainBlack: #000000;
+  --mainWhite: #F8F8F8;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Calculator */
+.calculator{
+  width: 30rem;
+  height: 45rem;
+  background-color: var(--mainBlack);
+  padding: 1rem;
+  border-radius: 3rem;
+}
+.display{
+  width: 100%;
+  height: 15rem;
+  background-color: var(--mainBlack);
+}
+.buttons{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  row-gap: 1rem;
+}
+/* Grid */
+.btn{
+  width: 4rem;
+  height: 4rem;
+  border: 0px;
+  border-radius: 100px;
+  font-size: 1.7rem;
+  color: var(--mainWhite);
+}
+/*  */
+.grey{
+  background-color: var(--mainLightGrey);
+  color: var(--mainBlack);
+}
+.orange{
+  background-color: var(--mainOrange);
+}
+.black{
+  background-color: var(--mainDarkGrey);
+}
+.half{
+  grid-column: span 2;
+  width: 100%;
+}
