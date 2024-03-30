@@ -1,6 +1,7 @@
 const buttonsWrapper = document.querySelector('.buttons');
 const buttons = document.querySelectorAll('.btn');
 const numberButtons = document.querySelectorAll('.number');
+const displayText = document.querySelector('.displayText');
 
 
 const calculatorCreator = () => {
@@ -15,6 +16,7 @@ const calculatorCreator = () => {
 
 buttons.forEach(function(button){
   button.addEventListener('click' , function(){
-    console.log(typeof(button.textContent));
+    displayText.textContent = button.textContent;
   })
 })
+
